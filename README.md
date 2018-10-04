@@ -1,4 +1,4 @@
-# rss_viewer
+# TwItterClient (real-time app)
 
 Project requires docker-composer
 
@@ -6,11 +6,14 @@ Project requires docker-composer
 2. Go into `PROJECT/docker` directory and enter in terminal `docker-compose up`
 3. Then open another terminal and go to the same directory  `PROJECT/docker` and run `docker-compose exec app_rss composer install`.
 4. Next, enter in terminal `docker-compose exec app_rss memcached -u nobody -d` to start memcached server inside the container
-5. Next, go to the root of `PROJECT`
+5. Next, enter in terminal `docker-compose exec app_rss php bin/my-ws-server.php` to start backend service
+6. Next, go to the root of `PROJECT`
  and type in terminal `npm install`
- 6. Next, starting fronted (Vue) `npm run dev`
- 
+ 7. Next, starting fronted (Vue) `npm run dev`
+ 8. Nex, starting backend: go to 
  Backend runs on port 8000, and frontend on 8080
+ 
+ 
  
 
  

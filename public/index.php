@@ -1,9 +1,6 @@
 <?php header('Access-Control-Allow-Origin: *'); ?>
 <?php
 require '../vendor/autoload.php';
-use Abraham\TwitterOAuth\TwitterOAuth;
-use React\Socket\ConnectionInterface;
-use Spatie\TwitterStreamingApi\PublicStream;
 use TwittApp\Router;
 
 //create Router
