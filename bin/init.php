@@ -2,7 +2,7 @@
   $tweets = [];
 
   $hashtags =[
-  '#googleYuritbox'
+  '#google'
   ];
 
   $followTo = [
