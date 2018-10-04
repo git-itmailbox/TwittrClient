@@ -1,0 +1,27 @@
+version: '2'
+services:
+ # The Application
+  app_rss:
+    build:
+      context: .
+      dockerfile: apprss.dockerfile
+    working_dir: /var/www
+    volumes:
+      - ../:/var/www
+    environment:
+      - "DB_PORT=3306"
+    ports:
+      - 11211:11211
+      - 5555:5555
+# The Web Server
+  web7_rss:
+    build:
+      context: .
+      dockerfile: web.dockerfile
+    working_dir: /var/www
+    volumes_from:
+      - app_rss
+    ports:
+      - 8000:80
+      - 8081:8081
+
