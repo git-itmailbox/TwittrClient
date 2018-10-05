@@ -16,7 +16,7 @@
     <div class="row">
         <b-col sm="4"><label for="newHashtag">Listen to new hashtag:</label></b-col>
         <b-col sm="8"><b-form-input id="newHashtag" type="text"  v-model="newHashtag"></b-form-input></b-col>
-      <b-col>
+      <b-col sm="4" offset="4">
         <b-button class="form-control" size="sm" variant="secondary" v-on:click="addHashtag">
           Add new
         </b-button>
